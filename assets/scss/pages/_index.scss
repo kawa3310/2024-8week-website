@@ -1,0 +1,318 @@
+
+.bgimg-1{
+  position: relative;
+  overflow: hidden;
+}
+
+
+.bg-flower{
+  &::before{
+    content: "";
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-4.png?raw=true') no-repeat center center;
+    width: 100%;
+    height: 720px;
+    left: -45%;
+    top: -50%;
+    position: absolute;
+  }
+}
+
+.bg-style{
+  border-radius: 80px;
+  width: 100%
+}
+
+.advertise{
+  position: absolute;
+  bottom: 18%;
+  left: 1%;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  padding: 16px 32px 16px 16px;
+  p{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #E5F4FF;
+    border-radius: 100px;
+    padding: 8px 12px;
+    margin-right: 8px;
+  }
+  span{
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+
+.advertise-2{
+  position: absolute;
+  color: #FFFFFF;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 0 100px 0 77px;
+  padding: 32px 80px 32px 120px;
+  h2{
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 0 100px 0 0;
+  }
+}
+
+.bgimg-1-sm{
+  background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/hero-2.png?raw=true') no-repeat center center/cover;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  .advertise{
+    left: 5%;
+    right: 5%;
+    padding: 8px 24px 8px 8px;
+    p{
+      padding-left: 8px;
+    }
+    span{
+      font-size: 14px;
+    }
+  }
+  .advertise-2{
+    position: absolute;
+    border-radius: 0;
+    bottom: 0%;
+    left: 0%;
+    padding: 16px 24px;
+    color: #FFFFFF;
+    h2{
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}
+
+.title-text{
+  h5{
+    color: #4B4B4B;
+  }
+  position: relative;
+  z-index: 2;
+}
+
+
+.main{
+  position: relative;
+  overflow: hidden;
+  .menu{
+    position: relative;
+  }
+  &::before{
+    content: "";
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-2.png?raw=true') no-repeat center center / cover;
+    width: 560px;
+    height: 560px;
+    left: -20%;
+    top: 5%;
+    position: absolute;
+    @include ipad{
+      width: 200px;
+      height: 180px;
+      top: -11.5%;
+      left: -27%;
+    }
+  }
+  @include ipad{
+    margin-top: 80px;
+    overflow: visible;
+  }
+  .col-lg-8{
+    margin-top: 192px;
+    @include ipad{
+      margin-top: 0;
+    }
+  }
+  .col-lg-4{
+    margin-top: 352px;
+    @include ipad{
+      margin-top: 0;
+    }
+  }
+}
+
+.card{
+  max-height: auto;
+  border-radius: 20px;
+  .card-img-top{
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+  }
+  .card-body{
+    img{
+      width: 44px;
+      height: 44px;
+      position: relative;
+    }
+    p{
+      color: #4B4B4B;
+    }
+    span{
+      font-size: 14px;
+      color: #4B4B4B;
+    }
+  }
+  .card-footer{
+    font-size: 14px;
+    color: #4B4B4B;
+  }
+  .progress{
+    height: 8px;
+  }
+}
+
+.slogan{
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  background-color: #E5F4FF;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.carousel{
+  background: linear-gradient(to bottom, #F0F6FF 0%, #FFFFFF 100%);
+  position: relative;
+  &::after{
+    content: "";
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-3.png?raw=true')no-repeat center center / cover;
+    width: 480px;
+    height: 480px;
+    top: 20%;
+    right: 85%;
+    position: absolute;
+  }
+  .card{
+    .slogan{
+      background-color: #FFE0D7;
+    }
+  }
+  .card-footer{
+    font-size: 14px;
+  }
+  .bg-flower-3{
+    &::before{
+      content: "";
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-1.png?raw=true') no-repeat center center / cover;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -46%;
+      left: 37%;
+      @include mobile{
+        top: -33%;
+        left: -10%;
+      }
+    }
+  }
+}
+
+.tag-title{
+  width: 81px;
+  padding: 4px 0px;
+  text-align: center;
+  background-color: #ECECEC;
+  color: #4B4B4B;
+}
+
+
+.bg-flower-4{
+  background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-3.png?raw=true') no-repeat center center / cover;
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  top: 20%;
+  left: -20%;
+  display: none;
+}
+
+
+.carousel-course{
+  border-radius: 40px;
+  margin-bottom: 120px;
+}
+
+.course-card{
+  width: 272px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  gap: 20px;
+}
+
+.title-pc{
+  margin-top: 131px;
+}
+
+.teacher-card{
+  position: relative;
+  .teacher-img{
+    width: 291px;
+    border-radius: 20px;
+    @include mobile{
+      padding-left: 60px;
+    }
+  }
+}
+
+.teacher-card-body{
+  max-width: 360px;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 75%;
+  left: -15%;
+  @include mobile{
+    width: 305px;
+    top: 75%;
+    left: -4%;
+  }
+  .card-tag{
+    font-size: 14px;
+  }
+  .card-content{
+    color: #4B4B4B;
+  }
+}
+
+.banner{
+  position: relative;
+  margin-bottom: 400px;
+  @include mobile{
+    margin-bottom: 100px;
+  }
+  &::before{
+    content: "";
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/line-1.png?raw=true') no-repeat center center / cover;
+    width: 100%;
+    height: 452px;
+    position: absolute;
+    top: 0;
+  }
+  .bg-flower-3{
+    &::before{
+      content: "";
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-1.png?raw=true') no-repeat center center / cover;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -38%;
+      left: 39%;
+      opacity: 1;
+      @include mobile{
+        top: -1.5%;
+        left: -3%;
+      }
+    }
+  }
+}
+

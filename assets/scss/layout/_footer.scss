@@ -1,0 +1,30 @@
+
+footer{
+  background-color: #282828;
+  padding: 100px 0;
+  border-radius: 80px 80px 0 0;
+  @include mobile{
+    border-radius: 48px 48px 0 0;
+    padding: 48px 12px;
+    img{
+      padding-bottom: 40px;
+    }
+  }
+  p{
+    font-size: 14px;
+    @include mobile{
+      font-size: 12px;
+    }
+  }
+}
+
+.footer-icon{
+  @include mobile{
+    padding: 40px 0 32px 0;
+  }
+  .bi{
+    border-radius: 40px;
+    border: 1px solid #000;
+    padding: 11px 12px;
+  }
+}

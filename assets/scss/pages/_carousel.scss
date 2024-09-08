@@ -1,0 +1,171 @@
+.header{
+  position: relative;
+  overflow: hidden;
+  background: #F9F9F9; 
+  ul{
+    position: relative;
+  }
+  &::before{
+    content: "";
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-2.png?raw=true') no-repeat center center / cover;
+    width: 560px;
+    height: 560px;
+    top: -20%;
+    left: -8%;
+    position: absolute;
+    @include ipad{
+      display: none;
+    }
+  }
+  &::after{
+    content: "";
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/polygon-2.png?raw=true') no-repeat center center / cover;
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 2%;
+    position: absolute;
+    @include ipad{
+      display: none;
+    }
+  }
+}
+
+.course-header{
+  position: relative;
+  z-index: 2;
+  &::before{
+    content: "";
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/flower-2.png?raw=true') no-repeat center center / cover;
+    width: 560px;
+    height: 560px;
+    top: 19%;
+    left: 65%;
+    position: absolute;
+    @include ipad{
+      width: 240px;
+      height: 240px;
+      top: -45%;
+      left: 50%;
+    }
+  }
+  &::after{
+    content: "";
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/polygon-2.png?raw=true') no-repeat center center / cover;
+    width: 60px;
+    height: 60px;
+    top: -15%;
+    left: 76%;
+    position: absolute;
+    @include ipad{
+      width: 40px;
+      height: 40px;
+      top: 6%;
+      left: 0px;
+      z-index: 0;
+    }
+  }
+}
+
+.side-menu{
+  position: relative;
+  .page-link:hover{
+    position: relative;
+    &::before{
+      content: "";
+      background-color: #0068FF;
+      position: absolute;
+      width: 32px;
+      height: 4px;
+      left: 20%;
+      bottom: -70%;
+    }
+  }
+  .bd{
+    &::before{
+      content: "";
+      background-color: #0068FF;
+      position: absolute;
+      width: 32px;
+      height: 4px;
+      left: 0.5%;
+      bottom: -2%;
+    }
+  }
+}
+
+.theme{
+  .bi{
+    font-size: 40px;
+  }
+}
+
+.card{
+  .card-img{
+    border-radius: 5px 5px 0px 0px;
+  }
+  .slogan{
+    background-color: #FFE0D7;
+  }
+}
+
+.peges{
+  li{
+    padding: 16px 21px;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    .bi{
+      font-size: 14px;
+      color: #909090;
+    }
+    &:hover{
+      background: #0068FF;
+      a, .bi-chevron-right, .bi-chevron-double-right{
+        color: white;
+      }
+    }
+    @include ipad{
+      padding: 4px 9px;
+    }
+  }
+  a{
+    color: #4B4B4B;
+  }
+}
+
+.card-sm{
+  position: relative;
+  .card-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+  }
+}
+.card-img-discount::before{
+  content: "8折";
+  background-color: #FFE0D7;
+  color: #FF3A55;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  border-radius: 100px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+.card-sm-img{
+  width: 32px;
+  height: 32px; 
+}
+
+.price{
+  font-size: 14px;
+  @include mobile{
+    font-size: 12px;
+  }
+}
+
+.card-footer{
+  p, span{
+      font-size: 14px;
+  }
+}

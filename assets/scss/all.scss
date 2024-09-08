@@ -1,0 +1,16 @@
+@import 'bootstrap/scss/functions';
+
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@import './helps/variables';
+@import 'bootstrap/scss/bootstrap';
+
+@import './default/set';
+@import './default/swiper';
+
+@import './layout/navbar';
+@import './layout/footer';
+
+//pages
+@import './pages/index';
+@import './pages/carousel';
